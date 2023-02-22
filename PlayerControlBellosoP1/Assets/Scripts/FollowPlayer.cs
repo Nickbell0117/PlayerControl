@@ -6,7 +6,7 @@ public class FollowPlayer : MonoBehaviour
 {
     public GameObject player;
     private Vector3 offset = new Vector3(0, 5, -7);
-    public GameObject Firstperson;
+  
     // Start is called before the first frame update
     void Start()
     {
@@ -16,12 +16,7 @@ public class FollowPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = player.transform.position + offset;
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            Firstperson.SetActive(true);
-            
-        }
+ 
     }
 
     void LateUpdate()
